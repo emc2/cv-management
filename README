@@ -1,0 +1,12 @@
+cv-management
+=============
+
+The tools I use to manage my resume/CV
+
+I keep my resume/CV data in an XML file, and use XSL stylesheets to
+produce whatever presentation formats I need (right now, there are
+stylesheets for plaintext, LaTeX, and a partially-complete XHTML one).
+
+I developed this system primarily for personal use, thus it is
+tailored largely to my needs.  As such, the XML data and stylesheets
+are far from bulletproof.

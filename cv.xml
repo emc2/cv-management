@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cv>
+  <name>Eric L. McCorkle</name>
+
+  <contact>
+    <location>
+      <street>73 Barrett St.</street>
+      <apt>5157</apt>
+      <city>Northampton</city>
+      <state>MA</state>
+      <country>USA</country>
+      <zip>01060</zip>
+    </location>
+
+    <email>ericmcc@cs.umass.edu</email>
+    <phone>404-644-6360</phone>
+  </contact>
+
+  <section>
+    <title>Profile</title>
+    <skillset>
+      <title>Knowledge</title>
+      <skills>
+	<title>Concurrency and Parallelism</title>
+	<skill>Multicore/Manycore Systems</skill>
+	<skill>Lock-Free Algorithms</skill>
+	<skill>Distributed Systems</skill>
+	<skill>Transactional Memory</skill>
+	<skill>Concurrency Theory</skill>
+      </skills>
+
+      <skills>
+	<title>Programming Languages</title>
+	<skill>Type Systems</skill>
+	<skill>Operational/Denotational Semantics</skill>
+	<skill>Language Design</skill>
+	<skill>Functional Languages</skill>
+	<skill>Advanced Type Systems (Linear, Dependent, Region/Effect Types)</skill>
+      </skills>
+
+      <skills>
+	<title>Compilers</title>
+	<skill>Compiler Design and Implementation</skill>
+	<skill>Intermediate Languages</skill>
+	<skill>Optimization</skill>
+	<skill>Program Analysis</skill>
+      </skills>
+
+      <skills>
+	<title>Systems</title>
+	<skill>OS Kernels</skill>
+	<skill>Runtime Systems</skill>
+	<skill>Device Drivers</skill>
+	<skill>Memory Allocation and Garbage Collection</skill>
+	<skill>Server Systems</skill>
+	<skill>Low-Level Programming</skill>
+	<skill>Reverse Engineering</skill>
+	<skill>Memory and Cache Heirarchies</skill>
+	<skill>Networking</skill>
+      </skills>
+
+      <skills>
+	<title>Theory</title>
+	<skill>Computability and Complexity Theory</skill>
+	<skill>Computational Models</skill>
+	<skill>Proofs and Logic</skill>
+	<skill>Cryptography</skill>
+	<skill>Interactive/Automated Theorem Proving</skill>
+	<skill>Formal Verification</skill>
+	<skill>Linear/Integer Programming</skill>
+      </skills>
+
+      <skills>
+	<title>Cross-Discipline</title>
+	<skill>Psychology</skill>
+	<skill>Mathematics</skill>
+	<skill>Statistics and Probability</skill>
+	<skill>Machine Learning Methods</skill>
+	<skill>Information Theory</skill>
+	<skill>Quantum Theory</skill>
+	<skill>Economics and Investing</skill>
+      </skills>
+    </skillset>
+
+    <skillset>
+      <title>Skills</title>
+      <skills>
+	<title>Research</title>
+	<skill>Literature Review</skill>
+	<skill>Experiment Design</skill>
+	<skill>Writing and Publication</skill>
+	<skill>Presentation</skill>
+      </skills>
+
+      <skills>
+	<title>Financial</title>
+	<skill>Basic Accounting and Taxes</skill>
+	<skill>Investment and Financial Analysis</skill>
+	<skill>Quantitative Computational Finance</skill>
+      </skills>
+
+      <skills>
+	<title>Business</title>
+	<skill>Entrepreneurship</skill>
+	<skill>Basic Contracts and Negotiation</skill>
+	<skill>Client Relations</skill>
+      </skills>
+
+      <skills>
+	<title>Software Development</title>
+	<skill>Full-Cycle Development</skill>
+	<skill>Planning and Design</skill>
+	<skill>Software Engineering</skill>
+	<skill>Best Practices</skill>
+	<skill>Testing and Verification</skill>
+      </skills>
+    </skillset>
+
+    <skillset>
+      <title>Practice</title>
+      <skills>
+	<title>Programming Languages</title>
+	<skill>C/C++</skill>
+	<skill>Haskell</skill>
+	<skill>Java</skill>
+	<skill>Standard ML</skill>
+	<skill>Assembly Languages</skill>
+	<skill>LLVM IR</skill>
+      </skills>
+
+      <skills>
+	<title>Frameworks and Tools</title>
+	<skill>LLVM</skill>
+	<skill>UEFI</skill>
+	<skill>Lex/Yacc</skill>
+	<skill>SQL</skill>
+	<skill>XML</skill>
+	<skill>Constraint Solvers</skill>
+	<skill>Automated Theorem Provers</skill>
+	<skill>OpenGL</skill>
+      </skills>
+
+      <skills>
+	<title>Platforms</title>
+	<skill>UNIX</skill>
+	<skill>Linux</skill>
+	<skill>FreeBSD</skill>
+	<skill>OpenBSD</skill>
+	<skill>Mac OS X</skill>
+	<skill>Embedded</skill>
+	<skill>Mobile Devices</skill>
+      </skills>
+    </skillset>
+  </section>
+
+  <section>
+    <title>Education</title>
+    <school type="graduate">
+      <name>University of Massachusetts</name>
+      <degree>Doctor of Philosophy</degree>
+      <advisor>Eliot Moss</advisor>
+      <thesis status="research">
+	<description>describes methods for modeling and reasoning about concurrency using type theory</description>
+	<committee>Eliot Moss</committee>
+	<committee>Neil Immerman</committee>
+      </thesis>
+      <field>Computer Science</field>
+      <concentration>Programming Languages</concentration>
+      <concentration>Concurrency</concentration>
+      <start>
+	<date>
+	  <year>2008</year>
+	</date>
+      </start>
+    </school>
+
+    <school type="graduate">
+      <name>Brown Univeristy</name>
+      <degree>Master of Science</degree>
+      <advisor>Maurice Herlihy</advisor>
+      <thesis status="complete">
+	<date>
+	  <month>May</month>
+	  <year>2008</year>
+	</date>
+	<title>Realizing Concurrent Functional Languages</title>
+	<description>describes runtime system and language constructs for supporting highly-concurrent realizations of modern functional languages</description>
+	<committee>Maurice Herlihy</committee>
+	<committee>Thomas Doeppener</committee>
+      </thesis>
+      <field>Computer Science</field>
+      <concentration>Concurrency</concentration>
+      <start>
+	<date>
+	  <year>2006</year>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2008</year>
+	</date>
+      </end>
+    </school>
+
+    <school type="undergraduate">
+      <name>Georgia Institute of Technology</name>
+      <degree>Bachelor of Science</degree>
+      <major>Computer Science</major>
+      <minor>Psychology</minor>
+      <start>
+	<date>
+	  <year>2000</year>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2004</year>
+	</date>
+      </end>
+      <comment>Awarded \$38,000 in merit-based scholarships (full tuition + housing for 4 years)</comment>
+      <comment>Won award for individual initiative at undergraduate research fair</comment>
+    </school>
+  </section>
+
+  <section>
+    <title>Experience</title>
+
+    <project>
+      <name>Google Summer of Code</name>
+      <description>EFI support for FreeBSD</description>
+      <comment>Adding support for EFI booting on 32- and 64-bit Intel systems for the FreeBSD operating system.</comment>
+    </project>
+
+    <job>
+      <company>IBM Research</company>
+      <location>
+	<city>Hawthorne</city>
+	<state>NY</state>
+      </location>
+      <position>Research Intern</position>
+      <description>Intern at T. J. Watson Research Center</description>
+      <comment>Two successive summer internships</comment>
+    </job>
+
+    <job>
+      <company>Oracle</company>
+      <location>
+	<city>Redwood City</city>
+	<state>CA</state>
+      </location>
+      <position>Graduate Intern</position>
+      <description>Analyzed, constructed monitoring framework, and suggested improvements to Enterprise Management Application Server (EMAS)</description>
+    </job>
+
+    <project>
+      <name>Entrepreneurship</name>
+      <location>
+	<city>Atlanta</city>
+	<state>GA</state>
+      </location>
+      <description>Co-founded small software/consulting business along with Frank Rietta.</description>
+      <comment>Duties included finances/accounting, software development, paralegal, and others</comment>
+    </project>
+
+    <project>
+      <name>Open-Source Projects</name>
+      <description>Past and ongoing efforts on open-source projects</description>
+      <comment>Identified problem and contributed patches enabling MLton SML compiler to work on Mac OS X</comment>
+      <comment>Port of ACX 100 wireless driver to HX4700 PDA for Linux</comment>
+      <comment>Haskell LLVM Bindings for LLVM 3.1</comment>
+      <comment>Work to get FreeBSD to run on late model MacBooks</comment>
+      <comment>Current work on FreeBSD drivers</comment>
+      <comment>Cryptographic, Steganographic Filesystem</comment>
+    </project>
+  </section>
+
+  <section>
+    <title>Research</title>
+
+    <project>
+      <name>Type Theory for Higher-Order Stateful Concurrency</name>
+      <description>Project aims to develop dependent type theory for verifying programs with realistic concurrency</description>
+      <comment>Part of dissertation research</comment>
+      <comment>Derives heavily from Hoare Type Theory (Morrisett et al.)</comment>
+      <comment>Initial effort was successful, focus is now on refining the theory</comment>
+    </project>
+
+    <project>
+      <name>Complexity Bounds for Lock-Free Concurrency</name>
+      <description>Proved several lower-bound results for lock-free linearizable algorithms</description>
+      <comment>Developed equivalent notion of lock-freedom for implementations of blocking synchronization constructs</comment>
+      <comment>Showed time and space lower-bound for implementing n+1-CAS using n-CAS</comment>
+      <comment>Showed combination of synchronous channels, choice, and transactions to be SAT-equivalent</comment>
+      <comment>Currently working to publish results</comment>
+    </project>
+
+    <project>
+      <name>Realizing Concurrent Functional Languages</name>
+      <description>Investigated issues surrounding the practical realization of highly-concurrent functional languages</description>
+      <comment>Master's thesis work</comment>
+      <comment>Designed runtime architecture for supporting microthreading</comment>
+      <comment>Designed lock-free thread scheduler and garbage collector</comment>
+      <comment>Working to produce implementation of designs that can be integrated with a functional language frontend</comment>
+    </project>
+
+    <project>
+      <name>Optimal Register Allocation for SSA Architectures</name>
+      <description>Independently reproduced results of Sebastian Hack (interference graphs for SSA programs are linear-time colorable)</description>
+      <comment>Extended algorithm to apply to real architectures</comment>
+      <comment>Possible future plans to implement for LLVM</comment>
+    </project>
+
+    <project>
+      <name>Modern Features for Systems Programming Languages</name>
+      <description>Focused on designing a language suitable for systems programming that incorporated features from ML and Haskell</description>
+      <comment>Undergraduate work</comment>
+      <comment>Published at regional conference level</comment>
+    </project>
+
+    <project>
+      <name>OS Kernel Design for Interoperability</name>
+      <description>Designed and implemented complete, portable, fully-preemptive OS kernel with virtual memory and multiprocessor support</description>
+      <comment>Undergraduate Work</comment>
+      <comment>Extended ideas from microkernel research</comment>
+    </project>
+
+  </section>
+
+  <section>
+    <title>Teaching</title>
+
+    <job>
+      <company>University of Massachusetts</company>
+      <location>
+	<city>Amherst</city>
+	<state>MA</state>
+      </location>
+      <position>Graduate Teaching Assistant</position>
+      <description>Teaching assistant for graduate-level compilers class</description>
+    </job>
+
+    <job>
+      <company>Brown University</company>
+      <location>
+	<city>Providence</city>
+	<state>RI</state>
+      </location>
+      <position>Graduate Teaching Assistant</position>
+      <description>Helped design and teach quantitative investing course for finance and computer science undergrads</description>
+    </job>
+
+    <job>
+      <company>Kaplan, Inc.</company>
+      <location>
+	<city>Atlanta</city>
+	<state>GA</state>
+      </location>
+      <position>Classroom Teacher</position>
+      <description>Taught SAT preparation classes for junior- and senior-year high school students</description>
+    </job>
+
+    <job>
+      <company>Georgia Institute of Technology</company>
+      <location>
+	<city>Atlanta</city>
+	<state>GA</state>
+      </location>
+      <position>Undegraduate Teaching Assistant</position>
+      <description>Teaching assistant for two classes: intro to systems and networking, operating systems</description>
+    </job>
+
+  </section>
+
+  <section>
+    <title>Publications</title>
+
+    <publication type="mastersthesis">
+      <title>Realizing Concurrent Functional Programming Languages</title>
+      <author>Eric L. McCorkle</author>
+      <date>
+	<month>May</month>
+	<year>2008</year>
+      </date>
+    </publication>
+
+    <publication type="preparation">
+      <title>Lock-Freedom Preservation and Complexity Bounds for Synchronization Protocols</title>
+      <author>Eric L. McCorkle</author>
+    </publication>
+
+    <publication type="preparation">
+      <title>Concurrent Copying Garbage Collection with Lock-Free Tracing and Copying</title>
+      <author>Eric L. McCorkle</author>
+    </publication>
+
+    <publication type="grant">
+      <title>The (Un)predictability of (Memory Management) Performance</title>
+      <author>Eliot Moss</author>
+      <agency>NSF</agency>
+      <comment>Contributed to writing, provided experiment data</comment>
+      <date>
+	<month>December</month>
+	<year>2010</year>
+      </date>
+    </publication>
+
+    <workshop>
+      <description>Evaluate 2010 workshop on research methods in computer science</description>
+    </workshop>
+
+  </section>
+
+  <section>
+    <title>References</title>
+
+    <reference>
+      <name>Eliot Moss</name>
+      <description>Ph.D Advisor</description>
+      <contact>
+	<email>moss@cs.umass.edu</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Neil Immerman</name>
+      <description>Ph.D Committee Member</description>
+      <contact>
+	<email>neil.immerman@gmail.com</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Jack Wileden</name>
+      <description>Research Advisor</description>
+      <contact>
+	<email>jack@cs.umass.edu</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Maurice Herlihy</name>
+      <description>Sc.M Advisor</description>
+      <contact>
+	<email>mph@cs.brown.edu</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Thomas Doeppener</name>
+      <description>Sc.M Thesis Co-Advisor</description>
+      <contact>
+	<email>twd@cs.brown.edu</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Doug Kimmelman</name>
+      <description>Research Mentor</description>
+      <contact>
+	<email>dnk@us.ibm.com</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Maria Eleftheriou</name>
+      <description>Manager</description>
+      <contact>
+	<email>mariae@us.ibm.com</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Dei Ashcraft</name>
+      <description>Recruiter</description>
+      <contact>
+	<email>dei.ashcraft@oracle.com</email>
+      </contact>
+    </reference>
+
+    <reference>
+      <name>Frank Rietta</name>
+      <description>Former Business Partner</description>
+      <contact>
+	<email>frank@rietta.com</email>
+      </contact>
+    </reference>
+
+  </section>
+</cv>
