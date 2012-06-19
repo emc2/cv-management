@@ -344,7 +344,6 @@
     <xsl:value-of select="."/>
   </xsl:template>
 
-
   <xsl:template match="workshop">
     <xsl:text>\ressubitem{Participant in </xsl:text>
     <xsl:value-of select="description"/>
