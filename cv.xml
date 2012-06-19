@@ -13,7 +13,7 @@
     </location>
 
     <email>ericmcc@cs.umass.edu</email>
-    <phone>404-644-6360</phone>
+    <phone>(404) 644-6360</phone>
   </contact>
 
   <section>
@@ -32,7 +32,9 @@
       <skills>
 	<title>Programming Languages</title>
 	<skill>Type Systems</skill>
+	<skill>Program Logics</skill>
 	<skill>Operational/Denotational Semantics</skill>
+	<skill>Mathematical Foundations of Semantics</skill>
 	<skill>Language Design</skill>
 	<skill>Functional Languages</skill>
 	<skill>Advanced Type Systems (Linear, Dependent, Region/Effect Types)</skill>
@@ -123,6 +125,7 @@
 	<skill>C/C++</skill>
 	<skill>Haskell</skill>
 	<skill>Java</skill>
+	<skill>Scala</skill>
 	<skill>Standard ML</skill>
 	<skill>Assembly Languages</skill>
 	<skill>LLVM IR</skill>
@@ -135,6 +138,9 @@
 	<skill>Lex/Yacc</skill>
 	<skill>SQL</skill>
 	<skill>XML</skill>
+	<skill>binutils</skill>
+	<skill>linkers</skill>
+	<skill>linker scripts</skill>
 	<skill>Constraint Solvers</skill>
 	<skill>Automated Theorem Provers</skill>
 	<skill>OpenGL</skill>
@@ -143,10 +149,10 @@
       <skills>
 	<title>Platforms</title>
 	<skill>UNIX</skill>
+	<skill>Mac OS X</skill>
 	<skill>Linux</skill>
 	<skill>FreeBSD</skill>
 	<skill>OpenBSD</skill>
-	<skill>Mac OS X</skill>
 	<skill>Embedded</skill>
 	<skill>Mobile Devices</skill>
       </skills>
@@ -163,6 +169,8 @@
 	<description>describes methods for modeling and reasoning about concurrency using type theory</description>
 	<committee>Eliot Moss</committee>
 	<committee>Neil Immerman</committee>
+	<committee>Jack Wileden</committee>
+	<committee>Neal Anderson</committee>
       </thesis>
       <field>Computer Science</field>
       <concentration>Programming Languages</concentration>
@@ -304,7 +312,7 @@
     </project>
 
     <project>
-      <name>Optimal Register Allocation for SSA Architectures</name>
+      <name>Optimal Register Allocation for SSA Programs</name>
       <description>Independently reproduced results of Sebastian Hack (interference graphs for SSA programs are linear-time colorable)</description>
       <comment>Extended algorithm to apply to real architectures</comment>
       <comment>Possible future plans to implement for LLVM</comment>
