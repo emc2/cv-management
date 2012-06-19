@@ -18,7 +18,7 @@
   </xsl:template>
 
   <xsl:template match="cv">
-    <div xmlns="http://www.w3.org/1999/xhtml" id="title">
+    <div xmlns="http://www.w3.org/1999/xhtml" id="name">
       <xsl:value-of select="name"/>
     </div>
   </xsl:template>
