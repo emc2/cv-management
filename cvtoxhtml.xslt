@@ -109,7 +109,7 @@
   <xsl:template match="thesis[@status='research']">
     <li xmlns="http://www.w3.org/1999/xhtml">
       <xsl:text>Thesis in progress, </xsl:text>
-      <xsl:value-of select="description"/>    
+      <xsl:value-of select="description"/>
     </li>
     <li xmlns="http://www.w3.org/1999/xhtml">
       <xsl:text>Committee </xsl:text>
@@ -200,6 +200,44 @@
       <xsl:value-of select="title"/>
       <xsl:text>."  Sc.M Thesis, </xsl:text>
       <xsl:apply-templates select="date"/>
+      <xsl:text>.</xsl:text>
+      <xsl:if test="not($comment = '')">
+	<xsl:text> (</xsl:text>
+	<xsl:value-of select="comment"/>
+	<xsl:text>)</xsl:text>
+      </xsl:if>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="publication[@type='submitted']">
+    <xsl:variable name="comment">
+      <xsl:apply-templates select="comment"/>
+    </xsl:variable>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="author"/>
+      <xsl:text>.  "</xsl:text>
+      <xsl:value-of select="title"/>
+      <xsl:text>."  Submitted to </xsl:text>
+      <xsl:value-of select="conference"/>
+      <xsl:text>.</xsl:text>
+      <xsl:if test="not($comment = '')">
+	<xsl:text> (</xsl:text>
+	<xsl:value-of select="comment"/>
+	<xsl:text>)</xsl:text>
+      </xsl:if>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="publication[@type='published']">
+    <xsl:variable name="comment">
+      <xsl:apply-templates select="comment"/>
+    </xsl:variable>
+    <p xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="author"/>
+      <xsl:text>.  "</xsl:text>
+      <xsl:value-of select="title"/>
+      <xsl:text>." </xsl:text>
+      <xsl:value-of select="conference"/>
       <xsl:text>.</xsl:text>
       <xsl:if test="not($comment = '')">
 	<xsl:text> (</xsl:text>

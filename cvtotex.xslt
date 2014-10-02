@@ -196,7 +196,7 @@
 
   <xsl:template match="thesis[@status='research']">
     <xsl:text>\ressubitem{Thesis in progress, </xsl:text>
-    <xsl:value-of select="description"/>    
+    <xsl:value-of select="description"/>
     <xsl:text>}
 \ressubitem{Committee: </xsl:text>
     <xsl:apply-templates select="committee"/>
@@ -306,6 +306,46 @@
     <xsl:text>.  "</xsl:text>
     <xsl:value-of select="title"/>
     <xsl:text>."  In Preparation.</xsl:text>
+    <xsl:if test="not($comment = '')">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="comment"/>
+      <xsl:text>)</xsl:text>
+    </xsl:if>
+    <xsl:text>}
+</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="publication[@type='submitted']">
+    <xsl:variable name="comment">
+      <xsl:apply-templates select="comment"/>
+    </xsl:variable>
+    <xsl:text>\ressubitem{</xsl:text>
+    <xsl:apply-templates select="author"/>
+    <xsl:text>.  "</xsl:text>
+    <xsl:value-of select="title"/>
+    <xsl:text>."  Submitted to </xsl:text>
+    <xsl:value-of select="conference"/>
+    <xsl:text>.</xsl:text>
+    <xsl:if test="not($comment = '')">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="comment"/>
+      <xsl:text>)</xsl:text>
+    </xsl:if>
+    <xsl:text>}
+</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="publication[@type='published']">
+    <xsl:variable name="comment">
+      <xsl:apply-templates select="comment"/>
+    </xsl:variable>
+    <xsl:text>\ressubitem{</xsl:text>
+    <xsl:apply-templates select="author"/>
+    <xsl:text>.  "</xsl:text>
+    <xsl:value-of select="title"/>
+    <xsl:text>." </xsl:text>
+    <xsl:value-of select="conference"/>
+    <xsl:text>.</xsl:text>
     <xsl:if test="not($comment = '')">
       <xsl:text> (</xsl:text>
       <xsl:value-of select="comment"/>

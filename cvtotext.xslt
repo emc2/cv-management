@@ -385,6 +385,70 @@
     </xsl:call-template>
   </xsl:template>
 
+  <xsl:template match="publication[@type='submitted']">
+    <xsl:param name="indent"/>
+    <xsl:variable name="comment">
+      <xsl:value-of select="comment"/>
+    </xsl:variable>
+    <xsl:value-of select="$blankline"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:call-template name="wrap-string">
+      <xsl:with-param name="str">
+	<xsl:text>* </xsl:text>
+	<xsl:apply-templates select="author"/>
+	<xsl:text>. "</xsl:text>
+	<xsl:value-of select="title"/>
+	<xsl:text>" </xsl:text>
+	<xsl:value-of select="conference"/>
+	<xsl:text>.</xsl:text>
+	<xsl:if test="not($comment = '')">
+	  <xsl:text>"  </xsl:text>
+	  <xsl:value-of select="$comment"/>
+	  <xsl:text>.</xsl:text>
+	</xsl:if>
+      </xsl:with-param>
+      <xsl:with-param name="break-mark">
+	<xsl:value-of select="$linebreak"/>
+	<xsl:value-of select="$indent"/>
+	<xsl:text>    </xsl:text>
+      </xsl:with-param>
+      <xsl:with-param name="wrap-col" select="80"/>
+      <xsl:with-param name="pos" select="string-length($indent) + 2"/>
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template match="publication[@type='published']">
+    <xsl:param name="indent"/>
+    <xsl:variable name="comment">
+      <xsl:value-of select="comment"/>
+    </xsl:variable>
+    <xsl:value-of select="$blankline"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:call-template name="wrap-string">
+      <xsl:with-param name="str">
+	<xsl:text>* </xsl:text>
+	<xsl:apply-templates select="author"/>
+	<xsl:text>. "</xsl:text>
+	<xsl:value-of select="title"/>
+	<xsl:text>"  Submitted to </xsl:text>
+	<xsl:value-of select="conference"/>
+	<xsl:text>.</xsl:text>
+	<xsl:if test="not($comment = '')">
+	  <xsl:text>"  </xsl:text>
+	  <xsl:value-of select="$comment"/>
+	  <xsl:text>.</xsl:text>
+	</xsl:if>
+      </xsl:with-param>
+      <xsl:with-param name="break-mark">
+	<xsl:value-of select="$linebreak"/>
+	<xsl:value-of select="$indent"/>
+	<xsl:text>    </xsl:text>
+      </xsl:with-param>
+      <xsl:with-param name="wrap-col" select="80"/>
+      <xsl:with-param name="pos" select="string-length($indent) + 2"/>
+    </xsl:call-template>
+  </xsl:template>
+
   <xsl:template match="publication[@type='preparation']">
     <xsl:param name="indent"/>
     <xsl:variable name="comment">

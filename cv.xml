@@ -4,15 +4,15 @@
 
   <contact>
     <location>
-      <street>73 Barrett St.</street>
-      <apt>5157</apt>
-      <city>Northampton</city>
+      <street>50 Newport St.</street>
+      <apt>2</apt>
+      <city>Arlington</city>
       <state>MA</state>
       <country>USA</country>
-      <zip>01060</zip>
+      <zip>02476</zip>
     </location>
 
-    <email>ericmcc@cs.umass.edu</email>
+    <email>eric@metricspace.net</email>
     <phone>(404) 644-6360</phone>
   </contact>
 
@@ -165,6 +165,7 @@
       <name>University of Massachusetts</name>
       <degree>Doctor of Philosophy</degree>
       <advisor>Eliot Moss</advisor>
+<!--
       <thesis status="research">
 	<description>describes methods for modeling and reasoning about concurrency using type theory</description>
 	<committee>Eliot Moss</committee>
@@ -172,6 +173,7 @@
 	<committee>Jack Wileden</committee>
 	<committee>Neal Anderson</committee>
       </thesis>
+-->
       <field>Computer Science</field>
       <concentration>Programming Languages</concentration>
       <concentration>Concurrency</concentration>
@@ -233,11 +235,15 @@
   <section>
     <title>Experience</title>
 
-    <project>
-      <name>Google Summer of Code</name>
-      <description>EFI support for FreeBSD</description>
-      <comment>Adding support for EFI booting on 32- and 64-bit Intel systems for the FreeBSD operating system.</comment>
-    </project>
+    <job>
+      <company>Oracle</company>
+      <location>
+	<city>Burlington</city>
+	<state>MA</state>
+      </location>
+      <position>Senior Member of Technical Staff</position>
+      <description>Java Platform Group</description>
+    </job>
 
     <job>
       <company>IBM Research</company>
@@ -358,16 +364,6 @@
     </job>
 
     <job>
-      <company>Kaplan, Inc.</company>
-      <location>
-	<city>Atlanta</city>
-	<state>GA</state>
-      </location>
-      <position>Classroom Teacher</position>
-      <description>Taught SAT preparation classes for junior- and senior-year high school students</description>
-    </job>
-
-    <job>
       <company>Georgia Institute of Technology</company>
       <location>
 	<city>Atlanta</city>
@@ -382,6 +378,23 @@
   <section>
     <title>Publications</title>
 
+    <publication type="preparation">
+      <title>Physical Semantics</title>
+      <author>Eric L. McCorkle</author>
+    </publication>
+
+    <publication type="submitted">
+      <title>Lock-Freedom Preservation and Complexity Bounds for Synchronization Protocols</title>
+      <author>Eric L. McCorkle</author>
+      <conference>OPODIS 2014</conference>
+    </publication>
+
+    <publication type="published">
+      <title>Building Connections Between Theories of Programming Languages and Physical Systems</title>
+      <author>Eric L. McCorkle</author>
+      <conference>Onward 2013</conference>
+    </publication>
+
     <publication type="mastersthesis">
       <title>Realizing Concurrent Functional Programming Languages</title>
       <author>Eric L. McCorkle</author>
@@ -389,16 +402,6 @@
 	<month>May</month>
 	<year>2008</year>
       </date>
-    </publication>
-
-    <publication type="preparation">
-      <title>Lock-Freedom Preservation and Complexity Bounds for Synchronization Protocols</title>
-      <author>Eric L. McCorkle</author>
-    </publication>
-
-    <publication type="preparation">
-      <title>Concurrent Copying Garbage Collection with Lock-Free Tracing and Copying</title>
-      <author>Eric L. McCorkle</author>
     </publication>
 
     <publication type="grant">
@@ -460,7 +463,7 @@
 	<email>twd@cs.brown.edu</email>
       </contact>
     </reference>
-
+<!--
     <reference>
       <name>Doug Kimmelman</name>
       <description>Research Mentor</description>
@@ -484,7 +487,7 @@
 	<email>dei.ashcraft@oracle.com</email>
       </contact>
     </reference>
-
+-->
     <reference>
       <name>Frank Rietta</name>
       <description>Former Business Partner</description>
