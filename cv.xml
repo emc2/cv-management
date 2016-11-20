@@ -4,8 +4,8 @@
 
   <contact>
     <location>
-      <street>50 Newport St.</street>
-      <apt>2</apt>
+      <street>30 Mill St.</street>
+      <apt>205</apt>
       <city>Arlington</city>
       <state>MA</state>
       <country>USA</country>
@@ -21,23 +21,23 @@
     <skillset>
       <title>Knowledge</title>
       <skills>
+	<title>Programming Languages</title>
+	<skill>Type Systems</skill>
+	<skill>Static Analysis</skill>
+	<skill>Operational/Denotational Semantics</skill>
+	<skill>Mathematical Foundations of Semantics</skill>
+	<skill>Language Design</skill>
+	<skill>Functional Languages</skill>
+	<skill>Advanced Type Systems (Linear, Dependent, Region/Effect Types)</skill>
+      </skills>
+
+      <skills>
 	<title>Concurrency and Parallelism</title>
 	<skill>Multicore/Manycore Systems</skill>
 	<skill>Lock-Free Algorithms</skill>
 	<skill>Distributed Systems</skill>
 	<skill>Transactional Memory</skill>
 	<skill>Concurrency Theory</skill>
-      </skills>
-
-      <skills>
-	<title>Programming Languages</title>
-	<skill>Type Systems</skill>
-	<skill>Program Logics</skill>
-	<skill>Operational/Denotational Semantics</skill>
-	<skill>Mathematical Foundations of Semantics</skill>
-	<skill>Language Design</skill>
-	<skill>Functional Languages</skill>
-	<skill>Advanced Type Systems (Linear, Dependent, Region/Effect Types)</skill>
       </skills>
 
       <skills>
@@ -52,6 +52,7 @@
 	<title>Systems</title>
 	<skill>OS Kernels</skill>
 	<skill>Runtime Systems</skill>
+        <skill>Database Systems</skill>
 	<skill>Device Drivers</skill>
 	<skill>Memory Allocation and Garbage Collection</skill>
 	<skill>Server Systems</skill>
@@ -63,8 +64,10 @@
 
       <skills>
 	<title>Theory</title>
-	<skill>Computability and Complexity Theory</skill>
+	<skill>Higher Mathematics (category theory, topology, analysis)</skill>
+	<skill>Advanced Computability and Complexity Theory</skill>
 	<skill>Computational Models</skill>
+        <skill>Advanced Algorithms and Data Structures</skill>
 	<skill>Proofs and Logic</skill>
 	<skill>Cryptography</skill>
 	<skill>Interactive/Automated Theorem Proving</skill>
@@ -122,8 +125,8 @@
       <title>Practice</title>
       <skills>
 	<title>Programming Languages</title>
-	<skill>C/C++</skill>
 	<skill>Haskell</skill>
+	<skill>C/C++</skill>
 	<skill>Java</skill>
 	<skill>Scala</skill>
 	<skill>Standard ML</skill>
@@ -148,32 +151,106 @@
 
       <skills>
 	<title>Platforms</title>
-	<skill>UNIX</skill>
-	<skill>Mac OS X</skill>
-	<skill>Linux</skill>
 	<skill>FreeBSD</skill>
 	<skill>OpenBSD</skill>
+	<skill>Linux</skill>
 	<skill>Embedded</skill>
-	<skill>Mobile Devices</skill>
+	<skill>Mac OS X</skill>
       </skills>
     </skillset>
+  </section>
+
+  <section>
+    <title>Experience</title>
+
+    <job>
+      <company>Codiscope</company>
+      <location>
+	<city>Boston</city>
+	<state>MA</state>
+      </location>
+      <start>
+	<date>
+	  <year>2015</year>
+          <month>May</month>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2016</year>
+          <month>Dec</month>
+	</date>
+      </end>
+      <position>Principal Scientist</position>
+      <description>Responsible for developing long-term technical direction</description>
+      <comment>Designed language and architecture for expressing static analyzers</comment>
+      <comment>Designed strongly-typed heterogeneous graph database system as backend for static analyzer language</comment>
+      <comment>Responsible for creation of quality engineering team and quality practices</comment>
+      <comment>Company acquired in Dec. 2016</comment>
+    </job>
+
+    <job>
+      <company>Oracle</company>
+      <location>
+	<city>Burlington</city>
+	<state>MA</state>
+      </location>
+      <start>
+	<date>
+	  <year>2012</year>
+          <month>Oct</month>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2015</year>
+          <month>May</month>
+	</date>
+      </end>
+      <position>Senior Member of Technical Staff</position>
+      <description>Java Platform Group</description>
+      <comment>Primarily worked on javac compiler team</comment>
+      <comment>Contributions include parameter reflection, testing of default methods, type annotation refactoring, compiler-grammar project, extensive test system for selection/resolution logic</comment>
+    </job>
+
+    <internship>
+      <company>IBM Research</company>
+      <location>
+	<city>Hawthorne</city>
+	<state>NY</state>
+      </location>
+      <position>Research Intern</position>
+      <description>Intern at T. J. Watson Research Center</description>
+      <comment>Two successive summer internships</comment>
+    </internship>
+
+    <internship>
+      <company>Oracle</company>
+      <location>
+	<city>Redwood City</city>
+	<state>CA</state>
+      </location>
+      <position>Graduate Intern</position>
+      <description>Analyzed, constructed monitoring framework, and suggested improvements to Enterprise Management Application Server (EMAS)</description>
+    </internship>
+
+    <project>
+      <name>Entrepreneurship</name>
+      <location>
+	<city>Atlanta</city>
+	<state>GA</state>
+      </location>
+      <description>Co-founded small software/consulting business along with Frank Rietta.</description>
+      <comment>Duties included finances/accounting, software development, paralegal, and others</comment>
+    </project>
   </section>
 
   <section>
     <title>Education</title>
     <school type="graduate">
       <name>University of Massachusetts</name>
-      <degree>Doctor of Philosophy</degree>
+      <degree>Doctor of Philosophy, ABD</degree>
       <advisor>Eliot Moss</advisor>
-<!--
-      <thesis status="research">
-	<description>describes methods for modeling and reasoning about concurrency using type theory</description>
-	<committee>Eliot Moss</committee>
-	<committee>Neil Immerman</committee>
-	<committee>Jack Wileden</committee>
-	<committee>Neal Anderson</committee>
-      </thesis>
--->
       <field>Computer Science</field>
       <concentration>Programming Languages</concentration>
       <concentration>Concurrency</concentration>
@@ -182,6 +259,11 @@
 	  <year>2008</year>
 	</date>
       </start>
+      <end>
+	<date>
+	  <year>2012</year>
+	</date>
+      </end>
     </school>
 
     <school type="graduate">
@@ -233,160 +315,46 @@
   </section>
 
   <section>
-    <title>Experience</title>
-
-    <job>
-      <company>Oracle</company>
-      <location>
-	<city>Burlington</city>
-	<state>MA</state>
-      </location>
-      <position>Senior Member of Technical Staff</position>
-      <description>Java Platform Group</description>
-    </job>
-
-    <job>
-      <company>IBM Research</company>
-      <location>
-	<city>Hawthorne</city>
-	<state>NY</state>
-      </location>
-      <position>Research Intern</position>
-      <description>Intern at T. J. Watson Research Center</description>
-      <comment>Two successive summer internships</comment>
-    </job>
-
-    <job>
-      <company>Oracle</company>
-      <location>
-	<city>Redwood City</city>
-	<state>CA</state>
-      </location>
-      <position>Graduate Intern</position>
-      <description>Analyzed, constructed monitoring framework, and suggested improvements to Enterprise Management Application Server (EMAS)</description>
-    </job>
+    <title>Projects</title>
 
     <project>
-      <name>Entrepreneurship</name>
-      <location>
-	<city>Atlanta</city>
-	<state>GA</state>
-      </location>
-      <description>Co-founded small software/consulting business along with Frank Rietta.</description>
-      <comment>Duties included finances/accounting, software development, paralegal, and others</comment>
+      <name>Practical Formal Methods</name>
+      <description>Ongoing effort to make formal methods usable in
+      industry practice</description>
+      <comment>Subject of a lightnining talk at IEEE SecDev</comment>
+      <comment>Aim to apply pragmatics of industrial languages to
+      formal methods</comment>
+      <comment>Currently developing a programming language with the goal of
+      implementing ideas</comment>
     </project>
 
     <project>
-      <name>Open-Source Projects</name>
-      <description>Past and ongoing efforts on open-source projects</description>
-      <comment>Identified problem and contributed patches enabling MLton SML compiler to work on Mac OS X</comment>
-      <comment>Port of ACX 100 wireless driver to HX4700 PDA for Linux</comment>
-      <comment>Haskell LLVM Bindings for LLVM 3.1</comment>
-      <comment>Work to get FreeBSD to run on late model MacBooks</comment>
-      <comment>Current work on FreeBSD drivers</comment>
-      <comment>Cryptographic, Steganographic Filesystem</comment>
-    </project>
-  </section>
-
-  <section>
-    <title>Research</title>
-
-    <project>
-      <name>Type Theory for Higher-Order Stateful Concurrency</name>
-      <description>Project aims to develop dependent type theory for verifying programs with realistic concurrency</description>
-      <comment>Part of dissertation research</comment>
-      <comment>Derives heavily from Hoare Type Theory (Morrisett et al.)</comment>
-      <comment>Initial effort was successful, focus is now on refining the theory</comment>
+      <name>Haskell Packages</name>
+      <description>Open-source Haskell packages</description>
+      <comment>HUnit-Plus unit-testing library</comment>
+      <comment>arith-encode, enumeration Godel-numbering APIs</comment>
+      <comment>compiler-toolbox library for building compilers</comment>
+      <comment>dynamic-pprint optimal-layout pretty-printer</comment>
+      <comment>Pull requests against alex, happy to enable typeclass-based lexers and parsers</comment>
     </project>
 
     <project>
-      <name>Complexity Bounds for Lock-Free Concurrency</name>
-      <description>Proved several lower-bound results for lock-free linearizable algorithms</description>
-      <comment>Developed equivalent notion of lock-freedom for implementations of blocking synchronization constructs</comment>
-      <comment>Showed time and space lower-bound for implementing n+1-CAS using n-CAS</comment>
-      <comment>Showed combination of synchronous channels, choice, and transactions to be SAT-equivalent</comment>
-      <comment>Currently working to publish results</comment>
+      <name>FreeBSD Contributions</name>
+      <description>Past and ongoing contributions to the FreeBSD
+      operating system</description>
+      <comment>ZFS upport for EFI boot (committed)</comment>
+      <comment>Major refactoring, GELI support for EFI boot loader (pending review)</comment>
+      <comment>BYD mouse driver (in progress)</comment>
+      <comment>Suspend-to-disk (in progress)</comment>
     </project>
-
-    <project>
-      <name>Realizing Concurrent Functional Languages</name>
-      <description>Investigated issues surrounding the practical realization of highly-concurrent functional languages</description>
-      <comment>Master's thesis work</comment>
-      <comment>Designed runtime architecture for supporting microthreading</comment>
-      <comment>Designed lock-free thread scheduler and garbage collector</comment>
-      <comment>Working to produce implementation of designs that can be integrated with a functional language frontend</comment>
-    </project>
-
-    <project>
-      <name>Optimal Register Allocation for SSA Programs</name>
-      <description>Independently reproduced results of Sebastian Hack (interference graphs for SSA programs are linear-time colorable)</description>
-      <comment>Extended algorithm to apply to real architectures</comment>
-      <comment>Possible future plans to implement for LLVM</comment>
-    </project>
-
-    <project>
-      <name>Modern Features for Systems Programming Languages</name>
-      <description>Focused on designing a language suitable for systems programming that incorporated features from ML and Haskell</description>
-      <comment>Undergraduate work</comment>
-      <comment>Published at regional conference level</comment>
-    </project>
-
-    <project>
-      <name>OS Kernel Design for Interoperability</name>
-      <description>Designed and implemented complete, portable, fully-preemptive OS kernel with virtual memory and multiprocessor support</description>
-      <comment>Undergraduate Work</comment>
-      <comment>Extended ideas from microkernel research</comment>
-    </project>
-
-  </section>
-
-  <section>
-    <title>Teaching</title>
-
-    <job>
-      <company>University of Massachusetts</company>
-      <location>
-	<city>Amherst</city>
-	<state>MA</state>
-      </location>
-      <position>Graduate Teaching Assistant</position>
-      <description>Teaching assistant for graduate-level compilers class</description>
-    </job>
-
-    <job>
-      <company>Brown University</company>
-      <location>
-	<city>Providence</city>
-	<state>RI</state>
-      </location>
-      <position>Graduate Teaching Assistant</position>
-      <description>Helped design and teach quantitative investing course for finance and computer science undergrads</description>
-    </job>
-
-    <job>
-      <company>Georgia Institute of Technology</company>
-      <location>
-	<city>Atlanta</city>
-	<state>GA</state>
-      </location>
-      <position>Undegraduate Teaching Assistant</position>
-      <description>Teaching assistant for two classes: intro to systems and networking, operating systems</description>
-    </job>
-
   </section>
 
   <section>
     <title>Publications</title>
-
-    <publication type="preparation">
-      <title>Physical Semantics</title>
+    <publication type="published">
+      <title>A Case for Combining Industrial Pragmatics with Formal Methods</title>
       <author>Eric L. McCorkle</author>
-    </publication>
-
-    <publication type="submitted">
-      <title>Lock-Freedom Preservation and Complexity Bounds for Synchronization Protocols</title>
-      <author>Eric L. McCorkle</author>
-      <conference>OPODIS 2014</conference>
+      <conference>IEEE SecDev 2016</conference>
     </publication>
 
     <publication type="published">
@@ -425,74 +393,34 @@
     <title>References</title>
 
     <reference>
-      <name>Eliot Moss</name>
-      <description>Ph.D Advisor</description>
+      <name>John Steven</name>
+      <description>CTO, Codiscope/Cigital</description>
       <contact>
-	<email>moss@cs.umass.edu</email>
+	<email>john@codiscope.com</email>
       </contact>
     </reference>
 
     <reference>
-      <name>Neil Immerman</name>
-      <description>Ph.D Committee Member</description>
+      <name>Ian Spiro</name>
+      <description>Research Director, Codiscope</description>
       <contact>
-	<email>neil.immerman@gmail.com</email>
+	<email>ispiro@codiscope.com</email>
       </contact>
     </reference>
 
     <reference>
-      <name>Jack Wileden</name>
-      <description>Research Advisor</description>
+      <name>Chris Schmidt</name>
+      <description>Guidance Officer, Codiscope</description>
       <contact>
-	<email>jack@cs.umass.edu</email>
+	<email>cschmidt@codiscope.com</email>
       </contact>
     </reference>
 
     <reference>
-      <name>Maurice Herlihy</name>
-      <description>Sc.M Advisor</description>
+      <name>Coni Tartaglia</name>
+      <description>Quality Engineering Director, Codiscope</description>
       <contact>
-	<email>mph@cs.brown.edu</email>
-      </contact>
-    </reference>
-
-    <reference>
-      <name>Thomas Doeppener</name>
-      <description>Sc.M Thesis Co-Advisor</description>
-      <contact>
-	<email>twd@cs.brown.edu</email>
-      </contact>
-    </reference>
-<!--
-    <reference>
-      <name>Doug Kimmelman</name>
-      <description>Research Mentor</description>
-      <contact>
-	<email>dnk@us.ibm.com</email>
-      </contact>
-    </reference>
-
-    <reference>
-      <name>Maria Eleftheriou</name>
-      <description>Manager</description>
-      <contact>
-	<email>mariae@us.ibm.com</email>
-      </contact>
-    </reference>
-
-    <reference>
-      <name>Dei Ashcraft</name>
-      <description>Recruiter</description>
-      <contact>
-	<email>dei.ashcraft@oracle.com</email>
-      </contact>
-    </reference>
--->
-    <reference>
-      <name>Frank Rietta</name>
-      <description>Former Business Partner</description>
-      <contact>
-	<email>frank@rietta.com</email>
+	<email>ctartaglia@codiscope.com</email>
       </contact>
     </reference>
 

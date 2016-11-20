@@ -92,14 +92,14 @@
 %  Arg 1: Name of company or university
 %  Arg 2: Location
 %  Arg 3: Title and/or date range
-\newcommand*{\resbigitem}[2]{
+\newcommand*{\resbigitem}[3]{
   \vspace{-5pt}
-\item \textbf{#1}---#2
+\item \textbf{#1}---#2 (\emph{#3})
 }
 
 % This is a list that comes with a resbigitem
-\newenvironment{ressubsec}[2]{
-  \resbigitem{#1}{#2}
+\newenvironment{ressubsec}[3]{
+  \resbigitem{#1}{#2}{#3}
   \vspace{-2pt}
   \begin{itemize}
 }{
@@ -140,7 +140,7 @@
     <xsl:value-of select="title"/>
     <xsl:text>}
 </xsl:text>
-    <xsl:apply-templates select="skillset|school|job|project|reference|workshop|publication"/>
+    <xsl:apply-templates select="skillset|school|job|internship|project|reference|workshop|publication"/>
     <xsl:text>\end{ressection}
 </xsl:text>
   </xsl:template>
@@ -178,6 +178,8 @@
     <xsl:value-of select="name"/>
     <xsl:text>}{</xsl:text>
     <xsl:value-of select="degree"/>
+    <xsl:text>}{</xsl:text>
+    <xsl:apply-templates select="start"/> - <xsl:apply-templates select="end"/>
     <xsl:text>}
 \ressubitem{</xsl:text>
     <xsl:value-of select="field"/>
@@ -237,6 +239,8 @@
     <xsl:value-of select="name"/>
     <xsl:text>}{</xsl:text>
     <xsl:value-of select="degree"/>
+    <xsl:text>}{</xsl:text>
+    <xsl:apply-templates select="start"/> - <xsl:apply-templates select="end"/>
     <xsl:text>}
 \ressubitem{</xsl:text>
     <xsl:value-of select="major"/>
@@ -254,6 +258,8 @@
     <xsl:value-of select="company"/>
     <xsl:text>}{</xsl:text>
     <xsl:value-of select="position"/>
+    <xsl:text>}{</xsl:text>
+    <xsl:apply-templates select="start"/> - <xsl:apply-templates select="end"/>
     <xsl:text>}
 \ressubitem{</xsl:text>
     <xsl:value-of select="description"/>
@@ -261,6 +267,19 @@
 </xsl:text>
     <xsl:apply-templates select="comment"/>
     <xsl:text>\end{ressubsec}
+</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="internship">
+    <xsl:text>\begin{reslist}{</xsl:text>
+    <xsl:value-of select="company"/>---<xsl:value-of select="position"/>
+    <xsl:text>}
+\ressubitem{</xsl:text>
+    <xsl:value-of select="description"/>
+    <xsl:text>}
+</xsl:text>
+    <xsl:apply-templates select="comment"/>
+    <xsl:text>\end{reslist}
 </xsl:text>
   </xsl:template>
 
@@ -414,6 +433,14 @@
   <xsl:template match="concentration">
     <xsl:text>, </xsl:text>
     <xsl:value-of select="."/>
+  </xsl:template>
+
+  <xsl:template match="start">
+    <xsl:apply-templates select="date"/>
+  </xsl:template>
+
+  <xsl:template match="end">
+    <xsl:apply-templates select="date"/>
   </xsl:template>
 
   <xsl:template match="date">

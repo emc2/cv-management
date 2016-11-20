@@ -50,7 +50,7 @@
     <xsl:value-of select="title"/>
     <xsl:text>-</xsl:text>
     <xsl:value-of select="$linebreak"/>
-    <xsl:apply-templates select="skillset|skills|school|job|project|reference|workshop|publication">
+    <xsl:apply-templates select="skillset|skills|school|job|internship|project|reference|workshop|publication">
       <xsl:with-param name="indent">
 	<xsl:value-of select="$indent"/>
 	<xsl:text>  </xsl:text>
@@ -109,7 +109,9 @@
     <xsl:value-of select="name"/>
     <xsl:text> (</xsl:text>
     <xsl:value-of select="degree"/>
-    <xsl:text>):</xsl:text>
+    <xsl:text>), </xsl:text>
+    <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    <xsl:text>:</xsl:text>
     <xsl:value-of select="$blankline"/>
     <xsl:value-of select="$indent"/>
     <xsl:text>  * </xsl:text>
@@ -268,7 +270,9 @@
     <xsl:value-of select="name"/>
     <xsl:text> (</xsl:text>
     <xsl:value-of select="degree"/>
-    <xsl:text>):</xsl:text>
+    <xsl:text>), </xsl:text>
+    <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    <xsl:text>:</xsl:text>
     <xsl:value-of select="$blankline"/>
     <xsl:value-of select="$indent"/>
     <xsl:text>  * </xsl:text>
@@ -285,6 +289,48 @@
   </xsl:template>
 
   <xsl:template match="job">
+    <xsl:param name="indent"/>
+    <xsl:variable name="position">
+      <xsl:value-of select="position"/>
+    </xsl:variable>
+    <xsl:value-of select="$blankline"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:value-of select="company"/>
+    <xsl:if test="not($position = '')">
+      <xsl:text>, </xsl:text>
+      <xsl:value-of select="$position"/>
+    </xsl:if>
+    <xsl:text> (</xsl:text>
+    <xsl:value-of select="location/city"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="location/state"/>
+    <xsl:text>), </xsl:text>
+    <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    <xsl:text>:</xsl:text>
+    <xsl:value-of select="$blankline"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:call-template name="wrap-string">
+      <xsl:with-param name="str">
+	<xsl:text>  * </xsl:text>
+	<xsl:apply-templates select="description"/>
+      </xsl:with-param>
+      <xsl:with-param name="break-mark">
+	<xsl:value-of select="$linebreak"/>
+	<xsl:value-of select="$indent"/>
+	<xsl:text>    </xsl:text>
+      </xsl:with-param>
+      <xsl:with-param name="wrap-col" select="80"/>
+      <xsl:with-param name="pos" select="string-length($indent) + 2"/>
+    </xsl:call-template>
+    <xsl:apply-templates select="comment">
+      <xsl:with-param name="indent">
+	<xsl:value-of select="$indent"/>
+	<xsl:text>  </xsl:text>
+      </xsl:with-param>
+    </xsl:apply-templates>
+  </xsl:template>
+
+    <xsl:template match="internship">
     <xsl:param name="indent"/>
     <xsl:variable name="position">
       <xsl:value-of select="position"/>
@@ -684,6 +730,14 @@
       <xsl:text>, </xsl:text>
     </xsl:if>
     <xsl:value-of select="year"/>
+  </xsl:template>
+
+  <xsl:template match="start">
+    <xsl:apply-templates select="date"/>
+  </xsl:template>
+
+  <xsl:template match="end">
+    <xsl:apply-templates select="date"/>
   </xsl:template>
 
 </xsl:stylesheet>

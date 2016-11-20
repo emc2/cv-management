@@ -53,7 +53,7 @@
     <h1 xmlns="http://www.w3.org/1999/xhtml">
       <xsl:value-of select="title"/>
     </h1>
-    <xsl:apply-templates select="skillset|school|job|project|reference|workshop|publication"/>
+    <xsl:apply-templates select="skillset|school|job|internship|project|reference|workshop|publication"/>
   </xsl:template>
 
   <xsl:template match="skillset">
@@ -96,6 +96,9 @@
       <xsl:text> (</xsl:text>
       <xsl:apply-templates select="concentration"/>
     </h3>
+    <h4 xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    </h4>
     <ul xmlns="http://www.w3.org/1999/xhtml">
       <li xmlns="http://www.w3.org/1999/xhtml">
 	<xsl:text>Advisor: </xsl:text>
@@ -159,6 +162,9 @@
       <xsl:value-of select="minor"/>
       <xsl:text> minor</xsl:text>
     </h3>
+    <h4 xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    </h4>
     <ul xmlns="http://www.w3.org/1999/xhtml">
       <xsl:apply-templates select="comment"/>
     </ul>
@@ -167,9 +173,28 @@
   <xsl:template match="job">
     <h2 xmlns="http://www.w3.org/1999/xhtml">
       <xsl:value-of select="company"/>
-      <xsl:text> </xsl:text>
-      <xsl:value-of select="position"/>
     </h2>
+    <h3 xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:value-of select="position"/>
+    </h3>
+    <h4 xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    </h4>
+    <ul xmlns="http://www.w3.org/1999/xhtml">
+      <li xmlns="http://www.w3.org/1999/xhtml">
+	<xsl:value-of select="description"/>
+      </li>
+      <xsl:apply-templates select="comment"/>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="internship">
+    <h2 xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:value-of select="company"/>
+    </h2>
+    <h3 xmlns="http://www.w3.org/1999/xhtml">
+      <xsl:value-of select="position"/>
+    </h3>
     <ul xmlns="http://www.w3.org/1999/xhtml">
       <li xmlns="http://www.w3.org/1999/xhtml">
 	<xsl:value-of select="description"/>
@@ -352,6 +377,14 @@
       <xsl:text>, </xsl:text>
     </xsl:if>
     <xsl:value-of select="year"/>
+  </xsl:template>
+
+  <xsl:template match="start">
+    <xsl:apply-templates select="date"/>
+  </xsl:template>
+
+  <xsl:template match="end">
+    <xsl:apply-templates select="date"/>
   </xsl:template>
 
 </xsl:stylesheet>
