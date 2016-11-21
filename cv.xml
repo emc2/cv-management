@@ -32,23 +32,6 @@
       </skills>
 
       <skills>
-	<title>Concurrency and Parallelism</title>
-	<skill>Multicore/Manycore Systems</skill>
-	<skill>Lock-Free Algorithms</skill>
-	<skill>Distributed Systems</skill>
-	<skill>Transactional Memory</skill>
-	<skill>Concurrency Theory</skill>
-      </skills>
-
-      <skills>
-	<title>Compilers</title>
-	<skill>Compiler Design and Implementation</skill>
-	<skill>Intermediate Languages</skill>
-	<skill>Optimization</skill>
-	<skill>Program Analysis</skill>
-      </skills>
-
-      <skills>
 	<title>Systems</title>
 	<skill>OS Kernels</skill>
 	<skill>Runtime Systems</skill>
@@ -63,27 +46,99 @@
       </skills>
 
       <skills>
-	<title>Theory</title>
-	<skill>Higher Mathematics (category theory, topology, analysis)</skill>
+	<title>Compilers</title>
+	<skill>Compiler Design and Implementation</skill>
+	<skill>Intermediate Languages</skill>
+	<skill>Optimization</skill>
+	<skill>Program Analysis</skill>
+      </skills>
+
+      <skills>
+	<title>CS Theory</title>
 	<skill>Advanced Computability and Complexity Theory</skill>
 	<skill>Computational Models</skill>
-        <skill>Advanced Algorithms and Data Structures</skill>
+        <skill>Advanced Data Structures (temporal, cache-oblivious, geometric)</skill>
 	<skill>Proofs and Logic</skill>
-	<skill>Cryptography</skill>
 	<skill>Interactive/Automated Theorem Proving</skill>
 	<skill>Formal Verification</skill>
 	<skill>Linear/Integer Programming</skill>
       </skills>
 
       <skills>
+	<title>Mathematics</title>
+        <skill>Category Theory</skill>
+	<skill>Information Theory</skill>
+        <skill>Topology</skill>
+        <skill>Analysis</skill>
+        <skill>Statistics and Probability</skill>
+      </skills>
+
+      <skills>
+	<title>Concurrency and Parallelism</title>
+	<skill>Multi/Manycore Systems</skill>
+	<skill>Lock/Wait-Free Algorithms</skill>
+	<skill>Consensus Protocols</skill>
+	<skill>Optimistic Replication</skill>
+	<skill>Distributed Systems</skill>
+	<skill>Transactional Memory</skill>
+	<skill>Concurrency Theory</skill>
+      </skills>
+
+      <skills>
+	<title>Information Security</title>
+	<skill>Cryptography</skill>
+	<skill>Secure Design</skill>
+	<skill>Threat Modeling</skill>
+	<skill>Identity Management</skill>
+	<skill>Source Code Analysis</skill>
+	<skill>Security Testing</skill>
+      </skills>
+
+      <skills>
 	<title>Cross-Discipline</title>
 	<skill>Psychology</skill>
-	<skill>Mathematics</skill>
-	<skill>Statistics and Probability</skill>
 	<skill>Machine Learning Methods</skill>
-	<skill>Information Theory</skill>
 	<skill>Quantum Theory</skill>
 	<skill>Economics and Investing</skill>
+      </skills>
+    </skillset>
+
+    <skillset>
+      <skills>
+	<title>Software Development</title>
+	<skill>Architecture and Planning</skill>
+	<skill>Software Processes</skill>
+	<skill>Quality Practices</skill>
+	<skill>High-Coverage Software Testing</skill>
+	<skill>Security Testing</skill>
+	<skill>Quality Infrastructure</skill>
+      </skills>
+
+      <title>Practice</title>
+      <skills>
+	<title>Programming Languages</title>
+	<skill>Haskell</skill>
+	<skill>C/C++</skill>
+	<skill>Java</skill>
+	<skill>Standard ML</skill>
+	<skill>Assembly Languages</skill>
+	<skill>LLVM IR</skill>
+      </skills>
+
+      <skills>
+	<title>Platforms, Frameworks, and Tools</title>
+	<skill>JVM Ecosystem</skill>
+	<skill>FreeBSD</skill>
+	<skill>Linux</skill>
+	<skill>LLVM</skill>
+	<skill>UEFI</skill>
+	<skill>Kerberos</skill>
+	<skill>Lex/Yacc</skill>
+	<skill>SQL</skill>
+	<skill>LDAP</skill>
+	<skill>XML</skill>
+	<skill>low-level binutils</skill>
+	<skill>Embedded</skill>
       </skills>
     </skillset>
 
@@ -91,6 +146,7 @@
       <title>Skills</title>
       <skills>
 	<title>Research</title>
+	<skill>Grant Writing</skill>
 	<skill>Literature Review</skill>
 	<skill>Experiment Design</skill>
 	<skill>Writing and Publication</skill>
@@ -110,139 +166,7 @@
 	<skill>Basic Contracts and Negotiation</skill>
 	<skill>Client Relations</skill>
       </skills>
-
-      <skills>
-	<title>Software Development</title>
-	<skill>Full-Cycle Development</skill>
-	<skill>Planning and Design</skill>
-	<skill>Software Engineering</skill>
-	<skill>Best Practices</skill>
-	<skill>Testing and Verification</skill>
-      </skills>
     </skillset>
-
-    <skillset>
-      <title>Practice</title>
-      <skills>
-	<title>Programming Languages</title>
-	<skill>Haskell</skill>
-	<skill>C/C++</skill>
-	<skill>Java</skill>
-	<skill>Scala</skill>
-	<skill>Standard ML</skill>
-	<skill>Assembly Languages</skill>
-	<skill>LLVM IR</skill>
-      </skills>
-
-      <skills>
-	<title>Frameworks and Tools</title>
-	<skill>LLVM</skill>
-	<skill>UEFI</skill>
-	<skill>Lex/Yacc</skill>
-	<skill>SQL</skill>
-	<skill>XML</skill>
-	<skill>binutils</skill>
-	<skill>linkers</skill>
-	<skill>linker scripts</skill>
-	<skill>Constraint Solvers</skill>
-	<skill>Automated Theorem Provers</skill>
-	<skill>OpenGL</skill>
-      </skills>
-
-      <skills>
-	<title>Platforms</title>
-	<skill>FreeBSD</skill>
-	<skill>OpenBSD</skill>
-	<skill>Linux</skill>
-	<skill>Embedded</skill>
-	<skill>Mac OS X</skill>
-      </skills>
-    </skillset>
-  </section>
-
-  <section>
-    <title>Experience</title>
-
-    <job>
-      <company>Codiscope</company>
-      <location>
-	<city>Boston</city>
-	<state>MA</state>
-      </location>
-      <start>
-	<date>
-	  <year>2015</year>
-          <month>May</month>
-	</date>
-      </start>
-      <end>
-	<date>
-	  <year>2016</year>
-          <month>Dec</month>
-	</date>
-      </end>
-      <position>Principal Scientist</position>
-      <description>Responsible for developing long-term technical direction</description>
-      <comment>Designed language and architecture for expressing static analyzers</comment>
-      <comment>Designed strongly-typed heterogeneous graph database system as backend for static analyzer language</comment>
-      <comment>Responsible for creation of quality engineering team and quality practices</comment>
-      <comment>Company acquired in Dec. 2016</comment>
-    </job>
-
-    <job>
-      <company>Oracle</company>
-      <location>
-	<city>Burlington</city>
-	<state>MA</state>
-      </location>
-      <start>
-	<date>
-	  <year>2012</year>
-          <month>Oct</month>
-	</date>
-      </start>
-      <end>
-	<date>
-	  <year>2015</year>
-          <month>May</month>
-	</date>
-      </end>
-      <position>Senior Member of Technical Staff</position>
-      <description>Java Platform Group</description>
-      <comment>Primarily worked on javac compiler team</comment>
-      <comment>Contributions include parameter reflection, testing of default methods, type annotation refactoring, compiler-grammar project, extensive test system for selection/resolution logic</comment>
-    </job>
-
-    <internship>
-      <company>IBM Research</company>
-      <location>
-	<city>Hawthorne</city>
-	<state>NY</state>
-      </location>
-      <position>Research Intern</position>
-      <description>Intern at T. J. Watson Research Center</description>
-      <comment>Two successive summer internships</comment>
-    </internship>
-
-    <internship>
-      <company>Oracle</company>
-      <location>
-	<city>Redwood City</city>
-	<state>CA</state>
-      </location>
-      <position>Graduate Intern</position>
-      <description>Analyzed, constructed monitoring framework, and suggested improvements to Enterprise Management Application Server (EMAS)</description>
-    </internship>
-
-    <project>
-      <name>Entrepreneurship</name>
-      <location>
-	<city>Atlanta</city>
-	<state>GA</state>
-      </location>
-      <description>Co-founded small software/consulting business along with Frank Rietta.</description>
-      <comment>Duties included finances/accounting, software development, paralegal, and others</comment>
-    </project>
   </section>
 
   <section>
@@ -309,9 +233,92 @@
 	  <year>2004</year>
 	</date>
       </end>
-      <comment>Awarded \$38,000 in merit-based scholarships (full tuition + housing for 4 years)</comment>
-      <comment>Won award for individual initiative at undergraduate research fair</comment>
     </school>
+  </section>
+
+  <section>
+    <title>Experience</title>
+
+    <job>
+      <company>Codiscope</company>
+      <location>
+	<city>Boston</city>
+	<state>MA</state>
+      </location>
+      <start>
+	<date>
+	  <year>2015</year>
+          <month>May</month>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2016</year>
+          <month>Dec</month>
+	</date>
+      </end>
+      <position>Principal Scientist</position>
+      <description>Responsible for developing long-term technical direction</description>
+      <comment>Designed language and architecture for expressing static analyzers</comment>
+      <comment>Designed strongly-typed heterogeneous graph database system as backend for static analyzer language</comment>
+      <comment>Responsible for creation of quality engineering team and quality practices</comment>
+      <comment>Company acquired in Dec. 2016</comment>
+    </job>
+
+    <job>
+      <company>Oracle</company>
+      <location>
+	<city>Burlington</city>
+	<state>MA</state>
+      </location>
+      <start>
+	<date>
+	  <year>2012</year>
+          <month>Oct</month>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2015</year>
+          <month>May</month>
+	</date>
+      </end>
+      <position>Senior Member of Technical Staff</position>
+      <description>Java Platform Group</description>
+      <comment>Primarily worked on javac compiler team</comment>
+      <comment>Contributions include parameter reflection, testing of lambda default methods, type annotation refactoring, compiler-grammar project, extensive test system for selection/resolution logic</comment>
+      <comment>Applied advanced CS theory and compiler techniques to develop high-quality testing methods</comment>
+    </job>
+
+    <internship>
+      <company>IBM Research</company>
+      <location>
+	<city>Hawthorne</city>
+	<state>NY</state>
+      </location>
+      <position>Research Intern</position>
+      <description>Intern at T. J. Watson Research Center</description>
+      <comment>Two successive summer internships</comment>
+    </internship>
+
+    <internship>
+      <company>Oracle</company>
+      <location>
+	<city>Redwood City</city>
+	<state>CA</state>
+      </location>
+      <position>Graduate Intern</position>
+      <description>Analyzed, constructed monitoring framework, and suggested improvements to Enterprise Management Application Server (EMAS)</description>
+    </internship>
+
+    <project>
+      <name>Entrepreneurship</name>
+      <location>
+	<city>Atlanta</city>
+	<state>GA</state>
+      </location>
+      <description>Co-founded small software/consulting business</description>
+    </project>
   </section>
 
   <section>
