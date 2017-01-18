@@ -44,6 +44,12 @@
     <div xmlns="http://www.w3.org/1999/xhtml" id="contact-email">
       <xsl:value-of select="contact/email"/>
     </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" id="contact-github">
+      <xsl:value-of select="contact/github"/>
+    </div>
+    <div xmlns="http://www.w3.org/1999/xhtml" id="contact-blog">
+      <xsl:value-of select="contact/blog"/>
+    </div>
     <div xmlns="http://www.w3.org/1999/xhtml" id="content">
       <xsl:apply-templates select="section"/>
     </div>

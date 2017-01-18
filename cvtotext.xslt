@@ -644,6 +644,14 @@
     <xsl:value-of select="$indent"/>
     <xsl:text>Email: </xsl:text>
     <xsl:value-of select="email"/>
+    <xsl:value-of select="$linebreak"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:text>Github: </xsl:text>
+    <xsl:value-of select="github"/>
+    <xsl:value-of select="$linebreak"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:text>Blog: </xsl:text>
+    <xsl:value-of select="blog"/>
   </xsl:template>
 
   <xsl:template match="location">

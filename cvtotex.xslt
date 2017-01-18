@@ -55,6 +55,12 @@
 \newcommand{\email}{</xsl:text>
     <xsl:value-of select="cv/contact/email"/>
     <xsl:text>}
+\newcommand{\github}{</xsl:text>
+    <xsl:value-of select="cv/contact/github"/>
+    <xsl:text>}
+\newcommand{\blog}{</xsl:text>
+    <xsl:value-of select="cv/contact/blog"/>
+    <xsl:text>}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % New commands and environments
@@ -122,9 +128,9 @@
 % Name with horizontal rule
 \bigname{\name}
 \vspace{8pt}
-{\small\itshape \addr \hfill \phone; \email}
+{\small\itshape \addr \hfill \phone; \email} \\
+{\small\itshape \blog \hfill \github}
 \rule{\textwidth}{2pt}
-%{\small\itshape \addr \hfill \phone; \email}
 \vspace{8pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%
