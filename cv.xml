@@ -4,12 +4,12 @@
 
   <contact>
     <location>
-      <street>30 Mill St.</street>
-      <apt>205</apt>
-      <city>Arlington</city>
-      <state>MA</state>
+      <street>309 Gold St.</street>
+      <apt>4D</apt>
+      <city>Brooklyn</city>
+      <state>NY</state>
       <country>USA</country>
-      <zip>02476</zip>
+      <zip>11201</zip>
     </location>
 
     <email>eric@metricspace.net</email>
@@ -101,6 +101,7 @@
 	<skill>Psychology</skill>
 	<skill>Machine Learning Methods</skill>
 	<skill>Quantum Theory</skill>
+	<skill>Physics</skill>
 	<skill>Economics and Investing</skill>
       </skills>
     </skillset>
@@ -242,6 +243,31 @@
     <title>Experience</title>
 
     <job>
+      <company>Morgan Stanley</company>
+      <location>
+	<city>New York City</city>
+	<state>NY</state>
+      </location>
+      <start>
+	<date>
+	  <year>2017</year>
+          <month>May</month>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>2017</year>
+          <month>Dec</month>
+	</date>
+      </end>
+      <position>Computer Scientist</position>
+      <description>Worked in risk infrastructure, on high-throughput distributed execution framework based on parallel graph reduction</description>
+      <comment>Initially worked on language and compiler aspects of system, moved to distribution and grid execution team.</comment>
+      <comment>One of the first participants in innovation program: designed challenge/response authentication protocol for cardless ATM system</comment>
+      <comment>Participant in efforts to create a quantum computing center of excellence</comment>
+    </job>
+
+    <job>
       <company>Codiscope</company>
       <location>
 	<city>Boston</city>
@@ -303,24 +329,6 @@
       <comment>Two successive summer internships</comment>
     </internship>
 
-    <internship>
-      <company>Oracle</company>
-      <location>
-	<city>Redwood City</city>
-	<state>CA</state>
-      </location>
-      <position>Graduate Intern</position>
-      <description>Analyzed, constructed monitoring framework, and suggested improvements to Enterprise Management Application Server (EMAS)</description>
-    </internship>
-
-    <project>
-      <name>Entrepreneurship</name>
-      <location>
-	<city>Atlanta</city>
-	<state>GA</state>
-      </location>
-      <description>Co-founded small software/consulting business</description>
-    </project>
   </section>
 
   <section>
@@ -338,13 +346,14 @@
     </project>
 
     <project>
-      <name>Haskell Packages</name>
-      <description>Open-source Haskell packages</description>
-      <comment>HUnit-Plus unit-testing library</comment>
-      <comment>arith-encode, enumeration Godel-numbering APIs</comment>
-      <comment>compiler-toolbox library for building compilers</comment>
-      <comment>dynamic-pprint optimal-layout pretty-printer</comment>
-      <comment>Pull requests against alex, happy to enable typeclass-based lexers and parsers</comment>
+      <name>Decentralized Application Infrastructure</name>
+      <description>Long-term effort to produce infrastructure for building decentralized applications</description>
+      <comment>Subject of a paper written about decentralized social
+      infrastructure</comment>
+      <comment>Based on combination of epidemic protocols and
+      BFT consensus</comment>
+      <comment>Goal of drawing on optimistic replication techniques to
+      resolve conflicts</comment>
     </project>
 
     <project>
@@ -352,14 +361,37 @@
       <description>Past and ongoing contributions to the FreeBSD
       operating system</description>
       <comment>ZFS upport for EFI boot (committed)</comment>
-      <comment>Major refactoring, GELI support for EFI boot loader (pending review)</comment>
-      <comment>BYD mouse driver (in progress)</comment>
-      <comment>Suspend-to-disk (in progress)</comment>
+      <comment>Work on GELI support for EFI boot loader</comment>
+      <comment>Designed OS-level public-key trust framework</comment>
+    </project>
+
+    <project>
+      <name>Other Open Source</name>
+      <description>RISC-V engines ISA extension</description>
+      <comment>Cryptographic function implementations</comment>
     </project>
   </section>
 
   <section>
     <title>Publications</title>
+    <publication type="published">
+      <title>A Public-Key Trust Infrastructure for FreeBSD</title>
+      <author>Eric L. McCorkle</author>
+      <conference>BSDCan Conference 2018</conference>
+    </publication>
+
+    <publication type="published">
+      <title>An Engines ISA Extension for the RISC-V Architecture (Poster)</title>
+      <author>Eric L. McCorkle</author>
+      <conference>7th RISC-V Workshop</conference>
+    </publication>
+
+    <publication type="published">
+      <title>GELI Support for UEFI for FreeBSD</title>
+      <author>Eric L. McCorkle</author>
+      <conference>vBSDCon Conference 2017</conference>
+    </publication>
+
     <publication type="published">
       <title>A Case for Combining Industrial Pragmatics with Formal Methods</title>
       <author>Eric L. McCorkle</author>
@@ -398,9 +430,9 @@
 
   </section>
 
+<!--
   <section>
     <title>References</title>
-
     <reference>
       <name>John Steven</name>
       <description>CTO, Codiscope/Cigital</description>
@@ -408,20 +440,11 @@
 	<email>john@codiscope.com</email>
       </contact>
     </reference>
-
     <reference>
       <name>Ian Spiro</name>
       <description>Research Director, Codiscope</description>
       <contact>
 	<email>ispiro@codiscope.com</email>
-      </contact>
-    </reference>
-
-    <reference>
-      <name>Chris Schmidt</name>
-      <description>Guidance Officer, Codiscope</description>
-      <contact>
-	<email>cschmidt@codiscope.com</email>
       </contact>
     </reference>
 
@@ -434,4 +457,5 @@
     </reference>
 
   </section>
+-->
 </cv>
