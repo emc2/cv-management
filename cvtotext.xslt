@@ -288,6 +288,23 @@
     </xsl:apply-templates>
   </xsl:template>
 
+  <xsl:template match="school[@type='selfstudy']">
+    <xsl:param name="indent"/>
+    <xsl:value-of select="$blankline"/>
+    <xsl:value-of select="$indent"/>
+    <xsl:text> Independent Studies</xsl:text>
+    <xsl:text>, </xsl:text>
+    <xsl:apply-templates select="start"/>-<xsl:apply-templates select="end"/>
+    <xsl:text>:</xsl:text>
+    <xsl:value-of select="$blankline"/>
+    <xsl:apply-templates select="comment">
+      <xsl:with-param name="indent">
+	<xsl:value-of select="$indent"/>
+	<xsl:text>  </xsl:text>
+      </xsl:with-param>
+    </xsl:apply-templates>
+  </xsl:template>
+
   <xsl:template match="job">
     <xsl:param name="indent"/>
     <xsl:variable name="position">
@@ -738,6 +755,10 @@
       <xsl:text>, </xsl:text>
     </xsl:if>
     <xsl:value-of select="year"/>
+  </xsl:template>
+
+  <xsl:template match="date[@type='now']">
+    <xsl:text>Now</xsl:text>
   </xsl:template>
 
   <xsl:template match="start">

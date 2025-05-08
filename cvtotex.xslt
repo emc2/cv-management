@@ -259,6 +259,16 @@
 </xsl:text>
   </xsl:template>
 
+  <xsl:template match="school[@type='selfstudy']">
+    <xsl:text>\begin{ressubsec}{Independent Studies}{Informal Self-Directed Studies}{</xsl:text>
+    <xsl:apply-templates select="start"/> - <xsl:apply-templates select="end"/>
+    <xsl:text>}
+</xsl:text>
+    <xsl:apply-templates select="comment"/>
+    <xsl:text>\end{ressubsec}
+</xsl:text>
+  </xsl:template>
+
   <xsl:template match="job">
     <xsl:text>\begin{ressubsec}{</xsl:text>
     <xsl:value-of select="company"/>
@@ -465,6 +475,10 @@
       <xsl:text>, </xsl:text>
     </xsl:if>
     <xsl:value-of select="year"/>
+  </xsl:template>
+
+  <xsl:template match="date[@type='now']">
+    <xsl:text>Now</xsl:text>
   </xsl:template>
 
   <xsl:template match="reference">

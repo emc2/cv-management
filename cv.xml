@@ -120,12 +120,15 @@
       <title>Practice</title>
       <skills>
 	<title>Programming Languages</title>
+        <skill>Rust</skill>
 	<skill>Haskell</skill>
 	<skill>C/C++</skill>
 	<skill>Java</skill>
-	<skill>Standard ML</skill>
+	<skill>Scala</skill>
 	<skill>Assembly Languages</skill>
 	<skill>LLVM IR</skill>
+	<skill>Standard ML</skill>
+        <skill>Coq</skill>
       </skills>
 
       <skills>
@@ -176,7 +179,7 @@
     <title>Education</title>
     <school type="graduate">
       <name>University of Massachusetts</name>
-      <degree>Doctor of Philosophy, ABD</degree>
+      <degree>Ph.D Work (ABD)</degree>
       <advisor>Eliot Moss</advisor>
       <field>Computer Science</field>
       <concentration>Programming Languages</concentration>
@@ -237,6 +240,21 @@
 	</date>
       </end>
     </school>
+
+    <school type="selfstudy">
+      <start>
+	<date>
+	  <year>2014</year>
+	</date>
+      </start>
+      <end>
+	<date>
+	  <year>Now</year>
+	</date>
+      </end>
+      <comment>Mathematics: Category Theory (Awodey), Topology (Munkres), Analysis (Rudin)</comment>
+      <comment>Physics (ongoing): Quantum Mechanics (Sakurai), Classical Mechanics (Goldstein), Staticstical Mechanics (Kardar, Paritha)</comment>
+    </school>
   </section>
 
   <section>
@@ -255,16 +273,13 @@
 	</date>
       </start>
       <end>
-	<date>
-	  <year>2017</year>
-          <month>Dec</month>
-	</date>
+	<date type="now"/>
       </end>
       <position>Computer Scientist</position>
       <description>Worked in risk infrastructure, on high-throughput distributed execution framework based on parallel graph reduction</description>
       <comment>Initially worked on language and compiler aspects of system, moved to distribution and grid execution team.</comment>
       <comment>One of the first participants in innovation program: designed challenge/response authentication protocol for cardless ATM system</comment>
-      <comment>Participant in efforts to create a quantum computing center of excellence</comment>
+      <comment>Participant in ongoing efforts to create a quantum computing program</comment>
     </job>
 
     <job>
@@ -317,18 +332,6 @@
       <comment>Contributions include parameter reflection, testing of lambda default methods, type annotation refactoring, compiler-grammar project, extensive test system for selection/resolution logic</comment>
       <comment>Applied advanced CS theory and compiler techniques to develop high-quality testing methods</comment>
     </job>
-
-    <internship>
-      <company>IBM Research</company>
-      <location>
-	<city>Hawthorne</city>
-	<state>NY</state>
-      </location>
-      <position>Research Intern</position>
-      <description>Intern at T. J. Watson Research Center</description>
-      <comment>Two successive summer internships</comment>
-    </internship>
-
   </section>
 
   <section>
@@ -346,14 +349,12 @@
     </project>
 
     <project>
-      <name>Decentralized Application Infrastructure</name>
-      <description>Long-term effort to produce infrastructure for building decentralized applications</description>
-      <comment>Subject of a paper written about decentralized social
-      infrastructure</comment>
-      <comment>Based on combination of epidemic protocols and
-      BFT consensus</comment>
-      <comment>Goal of drawing on optimistic replication techniques to
-      resolve conflicts</comment>
+      <name>OpenJDK</name>
+      <description>OpenJDK member, commit rights for javac/tools, core libraries, HotSpot</description>
+      <comment>Numerous contributions over the course of my employment at Oracle</comment>
+      <comment>Participated in effort to launch and maintain JDK8,
+      cleanup efforts following release</comment>
+      <comment>Minor work since leaving Oracle, but I retain member/commit rights</comment>
     </project>
 
     <project>
@@ -368,7 +369,7 @@
     <project>
       <name>Other Open Source</name>
       <description>RISC-V engines ISA extension</description>
-      <comment>Cryptographic function implementations</comment>
+      <comment>Cryptographic primitive implementations</comment>
     </project>
   </section>
 
