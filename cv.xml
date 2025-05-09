@@ -4,18 +4,17 @@
 
   <contact>
     <location>
-      <street>309 Gold St.</street>
-      <apt>4D</apt>
-      <city>Brooklyn</city>
-      <state>NY</state>
+      <street>2007 Clipper Park Rd</street>
+      <apt>124</apt>
+      <city>Baltimore</city>
+      <state>MD</state>
       <country>USA</country>
-      <zip>11201</zip>
+      <zip>21211</zip>
     </location>
 
-    <email>eric@metricspace.net</email>
+    <email>eric.mccorkle@jhuapl.edu</email>
     <phone>(404) 644-6360</phone>
     <github>https://github.com/emc2/</github>
-    <blog>https://ericmccorkleblog.wordpress.com/</blog>
   </contact>
 
   <section>
@@ -23,32 +22,14 @@
     <skillset>
       <title>Knowledge</title>
       <skills>
-	<title>Programming Languages</title>
+	<title>Programming Languages and Compilers</title>
 	<skill>Type Systems</skill>
 	<skill>Static Analysis</skill>
 	<skill>Operational/Denotational Semantics</skill>
 	<skill>Mathematical Foundations of Semantics</skill>
 	<skill>Language Design</skill>
 	<skill>Functional Languages</skill>
-	<skill>Advanced Type Systems (Linear, Dependent, Region/Effect Types)</skill>
-      </skills>
-
-      <skills>
-	<title>Systems</title>
-	<skill>OS Kernels</skill>
-	<skill>Runtime Systems</skill>
-        <skill>Database Systems</skill>
-	<skill>Device Drivers</skill>
-	<skill>Memory Allocation and Garbage Collection</skill>
-	<skill>Server Systems</skill>
-	<skill>Low-Level Programming</skill>
-	<skill>Reverse Engineering</skill>
-	<skill>Memory and Cache Heirarchies</skill>
-	<skill>Networking</skill>
-      </skills>
-
-      <skills>
-	<title>Compilers</title>
+	<skill>Advanced Type Systems</skill>
 	<skill>Compiler Design and Implementation</skill>
 	<skill>Intermediate Languages</skill>
 	<skill>Optimization</skill>
@@ -56,14 +37,61 @@
       </skills>
 
       <skills>
+	<title>Systems</title>
+	<skill>Distributed Systems</skill>
+	<skill>Network Protocols</skill>
+	<skill>Distributed Consensus</skill>
+	<skill>OS Kernels</skill>
+	<skill>Runtime Systems</skill>
+        <skill>Database Systems</skill>
+	<skill>Device Drivers</skill>
+	<skill>Garbage Collection</skill>
+	<skill>Low-Level Programming</skill>
+	<skill>Memory and Cache Heirarchies</skill>
+      </skills>
+
+      <skills>
 	<title>CS Theory</title>
 	<skill>Advanced Computability and Complexity Theory</skill>
 	<skill>Computational Models</skill>
-        <skill>Advanced Data Structures (temporal, cache-oblivious, geometric)</skill>
+        <skill>Advanced Data Structures (temporal, cache-oblivious, geometric, etc.)</skill>
 	<skill>Proofs and Logic</skill>
 	<skill>Interactive/Automated Theorem Proving</skill>
 	<skill>Formal Verification</skill>
 	<skill>Linear/Integer Programming</skill>
+      </skills>
+
+      <skills>
+	<title>Concurrency and Parallelism</title>
+	<skill>Lock/Wait-Free Algorithms</skill>
+	<skill>Optimistic Replication</skill>
+	<skill>Transactional Memory</skill>
+	<skill>Concurrency Theory</skill>
+      </skills>
+
+      <skills>
+	<title>Physics</title>
+	<skill>Quantum Mechanics</skill>
+	<skill>Classical Mechanics</skill>
+	<skill>Statistical Mechanics</skill>
+	<skill>General Relativity</skill>
+	<skill>Quantum Computing</skill>
+	<skill>Quantum Error Correction</skill>
+	<skill>Measurement-Based Quantum Computing</skill>
+      </skills>
+
+      <skills>
+	<title>Information Security</title>
+	<skill>Cryptography</skill>
+	<skill>Homomorphic Encryption</skill>
+	<skill>Zero-Knowledge Proofs</skill>
+	<skill>Garbled Circuits</skill>
+	<skill>Oblivious Transfer Protocols</skill>
+	<skill>Secure Design</skill>
+	<skill>Threat Modeling</skill>
+	<skill>Identity Management</skill>
+	<skill>Source Code Analysis</skill>
+	<skill>Security Testing</skill>
       </skills>
 
       <skills>
@@ -76,32 +104,8 @@
       </skills>
 
       <skills>
-	<title>Concurrency and Parallelism</title>
-	<skill>Multi/Manycore Systems</skill>
-	<skill>Lock/Wait-Free Algorithms</skill>
-	<skill>Consensus Protocols</skill>
-	<skill>Optimistic Replication</skill>
-	<skill>Distributed Systems</skill>
-	<skill>Transactional Memory</skill>
-	<skill>Concurrency Theory</skill>
-      </skills>
-
-      <skills>
-	<title>Information Security</title>
-	<skill>Cryptography</skill>
-	<skill>Secure Design</skill>
-	<skill>Threat Modeling</skill>
-	<skill>Identity Management</skill>
-	<skill>Source Code Analysis</skill>
-	<skill>Security Testing</skill>
-      </skills>
-
-      <skills>
 	<title>Cross-Discipline</title>
 	<skill>Psychology</skill>
-	<skill>Machine Learning Methods</skill>
-	<skill>Quantum Theory</skill>
-	<skill>Physics</skill>
 	<skill>Economics and Investing</skill>
       </skills>
     </skillset>
@@ -109,22 +113,22 @@
     <skillset>
       <skills>
 	<title>Software Development</title>
-	<skill>Architecture and Planning</skill>
+	<skill>Architecture and Design</skill>
 	<skill>Software Processes</skill>
 	<skill>Quality Practices</skill>
 	<skill>High-Coverage Software Testing</skill>
 	<skill>Security Testing</skill>
-	<skill>Quality Infrastructure</skill>
+	<skill>Research Software Engineering</skill>
+	<skill>Advanced Development</skill>
       </skills>
 
       <title>Practice</title>
       <skills>
 	<title>Programming Languages</title>
         <skill>Rust</skill>
-	<skill>Haskell</skill>
 	<skill>C/C++</skill>
 	<skill>Java</skill>
-	<skill>Scala</skill>
+	<skill>Haskell</skill>
 	<skill>Assembly Languages</skill>
 	<skill>LLVM IR</skill>
 	<skill>Standard ML</skill>
@@ -138,12 +142,9 @@
 	<skill>Linux</skill>
 	<skill>LLVM</skill>
 	<skill>UEFI</skill>
-	<skill>Kerberos</skill>
 	<skill>Lex/Yacc</skill>
 	<skill>SQL</skill>
-	<skill>LDAP</skill>
-	<skill>XML</skill>
-	<skill>low-level binutils</skill>
+	<skill>Low-Level binutils</skill>
 	<skill>Embedded</skill>
       </skills>
     </skillset>
@@ -152,9 +153,10 @@
       <title>Skills</title>
       <skills>
 	<title>Research</title>
-	<skill>Grant Writing</skill>
+	<skill>Proposal Writing</skill>
+	<skill>Program Development</skill>
+	<skill>Innovation Leadership</skill>
 	<skill>Literature Review</skill>
-	<skill>Experiment Design</skill>
 	<skill>Writing and Publication</skill>
 	<skill>Presentation</skill>
       </skills>
@@ -170,13 +172,28 @@
 	<title>Business</title>
 	<skill>Entrepreneurship</skill>
 	<skill>Basic Contracts and Negotiation</skill>
-	<skill>Client Relations</skill>
+	<skill>Client/Sponsor Relations</skill>
       </skills>
     </skillset>
   </section>
 
   <section>
     <title>Education</title>
+
+    <school type="graduate-professional">
+      <name>Johns Hopkins University</name>
+      <degree>M.S. (In Progress)</degree>
+      <field>Applied Physics</field>
+      <start>
+	<date>
+	  <year>2023</year>
+	</date>
+      </start>
+      <end>
+	<date type="now"/>
+      </end>
+    </school>
+
     <school type="graduate">
       <name>University of Massachusetts</name>
       <degree>Ph.D Work (ABD)</degree>
@@ -240,25 +257,37 @@
 	</date>
       </end>
     </school>
-
-    <school type="selfstudy">
-      <start>
-	<date>
-	  <year>2014</year>
-	</date>
-      </start>
-      <end>
-	<date>
-	  <year>Now</year>
-	</date>
-      </end>
-      <comment>Mathematics: Category Theory (Awodey), Topology (Munkres), Analysis (Rudin)</comment>
-      <comment>Physics (ongoing): Quantum Mechanics (Sakurai), Classical Mechanics (Goldstein), Staticstical Mechanics (Kardar, Paritha)</comment>
-    </school>
   </section>
 
   <section>
-    <title>Experience</title>
+    <title>Selected Experience</title>
+
+    <job>
+      <company>JHU/APL</company>
+      <location>
+	<city>Laurel</city>
+	<state>MD</state>
+      </location>
+      <start>
+	<date>
+	  <year>2019</year>
+          <month>April</month>
+	</date>
+      </start>
+      <end>
+	<date type="now"/>
+      </end>
+      <position>Senior Research Scientist II</position>
+      <description>Member of Cyber Concepts and Exploration (QCE) group</description>
+      <comment>Primary research agendas include resilient distributed systems, quantum computing, cryptographic computing</comment>
+      <comment>Long-term team member on a series of significant DARPA programs around quantum computing</comment>
+      <comment>Technical lead on IARPA HECTOR program (crytographic computing)</comment>
+      <comment>Project lead on ICAM project, several IR\&amp;D projects</comment>
+      <comment>Central role in leading and promoting innovation and IR\&amp;D participation in QCE group, </comment>
+      <comment>Strong track record in internal innovation programs, securing funding over 7 IR\&amp;D projects</comment>
+      <comment>Completed multiple strategic education courses on national security-related topics (inquire personally for details)</comment>
+      <comment>Inquire personally regarding security clearances</comment>
+    </job>
 
     <job>
       <company>Morgan Stanley</company>
@@ -273,13 +302,13 @@
 	</date>
       </start>
       <end>
-	<date type="now"/>
+	<date>
+	  <year>2019</year>
+          <month>April</month>
+	</date>
       </end>
       <position>Computer Scientist</position>
       <description>Worked in risk infrastructure, on high-throughput distributed execution framework based on parallel graph reduction</description>
-      <comment>Initially worked on language and compiler aspects of system, moved to distribution and grid execution team.</comment>
-      <comment>One of the first participants in innovation program: designed challenge/response authentication protocol for cardless ATM system</comment>
-      <comment>Participant in ongoing efforts to create a quantum computing program</comment>
     </job>
 
     <job>
@@ -302,10 +331,7 @@
       </end>
       <position>Principal Scientist</position>
       <description>Responsible for developing long-term technical direction</description>
-      <comment>Designed language and architecture for expressing static analyzers</comment>
-      <comment>Designed strongly-typed heterogeneous graph database system as backend for static analyzer language</comment>
-      <comment>Responsible for creation of quality engineering team and quality practices</comment>
-      <comment>Company acquired in Dec. 2016</comment>
+      <comment>Startup acquired by Synopsis Inc.</comment>
     </job>
 
     <job>
@@ -328,9 +354,7 @@
       </end>
       <position>Senior Member of Technical Staff</position>
       <description>Java Platform Group</description>
-      <comment>Primarily worked on javac compiler team</comment>
-      <comment>Contributions include parameter reflection, testing of lambda default methods, type annotation refactoring, compiler-grammar project, extensive test system for selection/resolution logic</comment>
-      <comment>Applied advanced CS theory and compiler techniques to develop high-quality testing methods</comment>
+      <comment>Member of language and tools team, worked primarily on javac</comment>
     </job>
   </section>
 
@@ -338,14 +362,35 @@
     <title>Projects</title>
 
     <project>
+      <name>Constellation Distributed Systems Platform</name>
+      <description>Ongoing open-source project to build resilient distributed systems platform suitable for operation in hostile environments</description>
+      <comment>https://github.com/constellation-system/</comment>
+      <comment>Culmination of my research agenda on resilient distributed systems at JHU/APL</comment>
+      <comment>IP owned by JHU/APL, approved for OSS release</comment>
+    </project>
+
+    <project>
+      <name>DARPA Hyperion, US2QC, QBI Programs</name>
+      <description>Series of DARPA projects aimed at exploring different approaches to utility-scale quantum computing</description>
+      <comment>My work was primarily focused on quantum error-correction (QEC)</comment>
+      <comment>Characterized a variety of QEC schemes, developed highly general software decoding packages</comment>
+    </project>
+
+    <project>
+      <name>IARPA HECTOR Program</name>
+      <description>Program to develop usable, scalable toolchains for cryptographic computing technologies (HE, ZK, SMPC, etc.)</description>
+      <comment>Technical lead of JHU/APL government team</comment>
+      <comment>Served as starting point for cryptographic computing programs at JHU/APL</comment>
+    </project>
+
+    <project>
       <name>Practical Formal Methods</name>
-      <description>Ongoing effort to make formal methods usable in
+      <description>Effort to make formal methods usable in
       industry practice</description>
-      <comment>Subject of a lightnining talk at IEEE SecDev</comment>
+      <comment>Subject of a lightning talk at IEEE SecDev</comment>
       <comment>Aim to apply pragmatics of industrial languages to
       formal methods</comment>
-      <comment>Currently developing a programming language with the goal of
-      implementing ideas</comment>
+      <comment>Subject of an internal group-level JHU/APL research agenda</comment>
     </project>
 
     <project>
@@ -358,23 +403,34 @@
     </project>
 
     <project>
-      <name>FreeBSD Contributions</name>
-      <description>Past and ongoing contributions to the FreeBSD
-      operating system</description>
-      <comment>ZFS upport for EFI boot (committed)</comment>
-      <comment>Work on GELI support for EFI boot loader</comment>
-      <comment>Designed OS-level public-key trust framework</comment>
-    </project>
-
-    <project>
-      <name>Other Open Source</name>
-      <description>RISC-V engines ISA extension</description>
+      <name>Open-Source Software</name>
+      <description>Miscellaneous OSS contributions</description>
+      <comment>RISC-V engines ISA extension</comment>
       <comment>Cryptographic primitive implementations</comment>
+      <comment>FreeBSD Contributions</comment>
     </project>
   </section>
 
   <section>
     <title>Publications</title>
+
+    <publication type="techreport">
+      <title>Presentation-Layer Security</title>
+      <author>Eric L. McCorkle</author>
+    </publication>
+
+    <publication type="techreport">
+      <title>ICAM Threat Model</title>
+      <author>Eric L. McCorkle, Patrick Allen</author>
+      <comment>Primary Author</comment>
+    </publication>
+
+    <publication type="techreport">
+      <title>HECTOR Technical Report</title>
+      <author>Eric L. McCorkle, Rachel Stonehirsch, Prathibha Rama, David Zaret</author>
+      <comment>Primary author</comment>
+    </publication>
+
     <publication type="published">
       <title>A Public-Key Trust Infrastructure for FreeBSD</title>
       <author>Eric L. McCorkle</author>
@@ -431,32 +487,54 @@
 
   </section>
 
-<!--
   <section>
-    <title>References</title>
-    <reference>
-      <name>John Steven</name>
-      <description>CTO, Codiscope/Cigital</description>
-      <contact>
-	<email>john@codiscope.com</email>
-      </contact>
-    </reference>
-    <reference>
-      <name>Ian Spiro</name>
-      <description>Research Director, Codiscope</description>
-      <contact>
-	<email>ispiro@codiscope.com</email>
-      </contact>
-    </reference>
+    <title>Intellectual Property</title>
 
-    <reference>
-      <name>Coni Tartaglia</name>
-      <description>Quality Engineering Director, Codiscope</description>
-      <contact>
-	<email>ctartaglia@codiscope.com</email>
-      </contact>
-    </reference>
+    <disclosure>
+      <title>Confidentially-Verifiable Health Records</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
 
+    <disclosure>
+      <title>Privacy-Preserving Contact Tracing and Indivdual Risk Assessment</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>Quantum Adaptive Surface Code Decoder (Quascade)</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>Automated Planning Capabilities for Relational Databases</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>A Leaderless Byzantine Fault-Tolerant Common Subset Protocol</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>Generalized Access Control for Homomorphic Encryption</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>Safe Key-Switching for CKKS</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>Compiling Distributed Agreement Protocols from Operational Specifications</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
+
+    <disclosure>
+      <title>Process for Facilitating Ad-Hoc Swarm Coordination Utilizing Consensus-Derived Cryptographic Identities and Behavior Attestation</title>
+      <owner>JHU/APL</owner>
+    </disclosure>
   </section>
--->
+
+
 </cv>

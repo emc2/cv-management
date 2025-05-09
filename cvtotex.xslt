@@ -129,7 +129,7 @@
 \bigname{\name}
 \vspace{8pt}
 {\small\itshape \addr \hfill \phone; \email} \\
-{\small\itshape \blog \hfill \github}
+{\small\itshape \hfill \github} \\
 \rule{\textwidth}{2pt}
 \vspace{8pt}
 
@@ -146,7 +146,7 @@
     <xsl:value-of select="title"/>
     <xsl:text>}
 </xsl:text>
-    <xsl:apply-templates select="skillset|school|job|internship|project|reference|workshop|publication"/>
+    <xsl:apply-templates select="skillset|school|job|internship|project|reference|workshop|publication|disclosure"/>
     <xsl:text>\end{ressection}
 </xsl:text>
   </xsl:template>
@@ -194,6 +194,24 @@
     <xsl:text>)}
 \ressubitem{Advisor: </xsl:text>
     <xsl:value-of select="advisor"/>
+    <xsl:text>}
+</xsl:text>
+    <xsl:apply-templates select="thesis"/>
+    <xsl:apply-templates select="comment"/>
+    <xsl:text>\end{ressubsec}
+</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="school[@type='graduate-professional']">
+    <xsl:text>\begin{ressubsec}{</xsl:text>
+    <xsl:value-of select="name"/>
+    <xsl:text>}{</xsl:text>
+    <xsl:value-of select="degree"/>
+    <xsl:text>}{</xsl:text>
+    <xsl:apply-templates select="start"/> - <xsl:apply-templates select="end"/>
+    <xsl:text>}
+\ressubitem{</xsl:text>
+    <xsl:value-of select="field"/>
     <xsl:text>}
 </xsl:text>
     <xsl:apply-templates select="thesis"/>
@@ -330,6 +348,7 @@
     </xsl:if>
     <xsl:text>}
 </xsl:text>
+
   </xsl:template>
 
   <xsl:template match="publication[@type='preparation']">
@@ -390,6 +409,24 @@
 </xsl:text>
   </xsl:template>
 
+  <xsl:template match="publication[@type='techreport']">
+    <xsl:variable name="comment">
+      <xsl:apply-templates select="comment"/>
+    </xsl:variable>
+    <xsl:text>\ressubitem{</xsl:text>
+    <xsl:apply-templates select="author"/>
+    <xsl:text>.  "</xsl:text>
+    <xsl:value-of select="title"/>
+    <xsl:text>." Technical report.</xsl:text>
+    <xsl:if test="not($comment = '')">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="comment"/>
+      <xsl:text>)</xsl:text>
+    </xsl:if>
+    <xsl:text>}
+</xsl:text>
+  </xsl:template>
+
   <xsl:template match="publication[@type='grant']">
     <xsl:variable name="comment">
       <xsl:apply-templates select="comment"/>
@@ -401,6 +438,26 @@
     <xsl:text>."  </xsl:text>
     <xsl:value-of select="agency"/>
     <xsl:text> grant proposal.</xsl:text>
+    <xsl:if test="not($comment = '')">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="comment"/>
+      <xsl:text>)</xsl:text>
+    </xsl:if>
+    <xsl:text>}
+</xsl:text>
+  </xsl:template>
+
+  <xsl:template match="disclosure">
+    <xsl:variable name="comment">
+      <xsl:apply-templates select="comment"/>
+    </xsl:variable>
+    <xsl:text>\ressubitem{</xsl:text>
+    <xsl:apply-templates select="author"/>
+    <xsl:text>.  "</xsl:text>
+    <xsl:value-of select="title"/>
+    <xsl:text>."  IP disclosure (</xsl:text>
+    <xsl:value-of select="owner"/>
+    <xsl:text>).</xsl:text>
     <xsl:if test="not($comment = '')">
       <xsl:text> (</xsl:text>
       <xsl:value-of select="comment"/>
